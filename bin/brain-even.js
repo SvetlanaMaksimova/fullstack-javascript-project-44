@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import _ from 'lodash';
 import readlineSync from 'readline-sync';
 import {welcomeUser, userName} from './src/cli.js';
