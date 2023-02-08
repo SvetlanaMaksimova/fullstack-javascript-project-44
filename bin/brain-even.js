@@ -14,12 +14,10 @@ const brainEven =  () => {
 
         const userAnswer = readlineSync.question('Your answer: ');
 
-        let correctAnswer = 'Correct!';
-
         if (randomNumber % 2 === 0 && userAnswer === 'yes') {
-        console.log(correctAnswer);
+        console.log('Correct!');
         } else if (randomNumber % 2!== 0 && userAnswer === 'no') {
-        console.log(correctAnswer);
+        console.log('Correct!');
         } else if (randomNumber % 2 === 0 && userAnswer === 'no') {
         console.log (`${userAnswer} is wrong answer ;(. Correct answer was 'yes'.`);
         console.log(`Let's try again, ${userName}!`);
