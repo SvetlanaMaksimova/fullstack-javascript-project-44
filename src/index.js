@@ -17,15 +17,11 @@ const getGamePlay = (ruleOfGame, valuesOfGame) => {
 
     if (userAnswer === answer) {
       console.log("Correct!");
-    } else {
-      if (answer !== userAnswer) {
-        console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.\nLet's try again, ${userName}!`);
-        return;
-      }
-      console.log("Correct");
+    } else if (userAnswer!== answer) {
+      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.\nLet's try again, ${userName}!`);
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  return console.log(`Congratulations, ${userName}!`);
 };
 
 export default getGamePlay;
