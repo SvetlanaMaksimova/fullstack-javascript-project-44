@@ -9,8 +9,7 @@ const getGamePlay = (ruleOfGame, valuesOfGame) => {
   const countRounds = 3;
 
   for (let i = 0; i < countRounds; i += 1) {
-    const question = valuesOfGame[0];
-    const answer = valuesOfGame[1];
+    const [question, answer] = valuesOfGame();
 
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question("Your answer: ");
@@ -18,7 +17,7 @@ const getGamePlay = (ruleOfGame, valuesOfGame) => {
     if (userAnswer === answer) {
       console.log("Correct!");
     } else if (userAnswer!== answer) {
-      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.\nLet's try again, ${userName}!`);
+      return console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".\nLet's try again, ${userName}!`);
     }
   }
   return console.log(`Congratulations, ${userName}!`);

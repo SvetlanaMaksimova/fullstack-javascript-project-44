@@ -15,9 +15,7 @@ const brainEven = () => {
 };
 
 const brainEvenGame = () => {
-  return getGamePlay(ruleOfGame, brainEven());
+  return getGamePlay(ruleOfGame, brainEven);
 };
 
 export default brainEvenGame;
-
-console.log(brainEvenGame());
