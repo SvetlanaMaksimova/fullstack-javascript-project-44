@@ -12,7 +12,7 @@ Install the dependencies and devDependencies and start the server.
 make install
 ```
 
-## Brain games:
+## Brain-games:
 - Brain even game
 
 [![asciicast](https://asciinema.org/a/558539.svg)](https://asciinema.org/a/558539)
