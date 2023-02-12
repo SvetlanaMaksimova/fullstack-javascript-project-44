@@ -16,3 +16,7 @@ make install
 - Brain even game
 
 [![asciicast](https://asciinema.org/a/558539.svg)](https://asciinema.org/a/558539)
+
+- Brain calculator game
+
+[![asciicast](https://asciinema.org/a/559210.svg)](https://asciinema.org/a/559210)
