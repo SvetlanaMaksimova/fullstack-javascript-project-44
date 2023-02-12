@@ -6,7 +6,7 @@
 
 ## Installation
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies and devDependencies.
 
 ```sh
 make install
@@ -20,3 +20,7 @@ make install
 - Brain calculator game
 
 [![asciicast](https://asciinema.org/a/559210.svg)](https://asciinema.org/a/559210)
+
+- Brain greatest common divisor(GCD) game
+
+[![asciicast](https://asciinema.org/a/559265.svg)](https://asciinema.org/a/559265)
