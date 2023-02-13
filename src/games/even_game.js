@@ -1,5 +1,4 @@
 import _ from 'lodash';
-import readlineSync from 'readline-sync';
 import getGamePlay from '../index.js';
 
 export const ruleOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';

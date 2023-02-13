@@ -22,6 +22,6 @@ const brainProgressive = () => {
   return [question, answer];
 };
 
-const brainProgressiveGame = () => getGamePlay(ruleOfGame, brainProgressive)
+const brainProgressiveGame = () => getGamePlay(ruleOfGame, brainProgressive);
 
 export default brainProgressiveGame;
