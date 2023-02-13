@@ -1,9 +1,9 @@
-import _ from "lodash";
-import getGamePlay from "../index.js";
+import _ from 'lodash';
+import getGamePlay from '../index.js';
 
-export const ruleOfGame = "What is the result of the expression?";
+export const ruleOfGame = 'What is the result of the expression?';
 
-const operators = ["+", "-", "*"];
+const operators = ['+', '-', '*'];
 
 const brainCalc = () => {
   const randomOperator = _.random(0, 2);
@@ -13,21 +13,19 @@ const brainCalc = () => {
   const secondOperand = _.random(1, 10);
   const expression = `${firstOperand} ${operators[randomOperator]} ${secondOperand}`;
   let result = 0;
-  if (operators[randomOperator] === "+") {
+  if (operators[randomOperator] === '+') {
     result = firstOperand + secondOperand;
-  } else if (operators[randomOperator] === "-") {
+  } else if (operators[randomOperator] === '-') {
     result = firstOperand - secondOperand;
-  } else if (operators[randomOperator] === "*") {
+  } else if (operators[randomOperator] === '*') {
     result = firstOperand * secondOperand;
   }
 
-  let answer = result.toString();
+  const answer = result.toString();
 
   return [expression, answer];
 };
 
-const brainCalcGame = () => {
-  return getGamePlay(ruleOfGame, brainCalc);
-};
+const brainCalcGame = () => getGamePlay(ruleOfGame, brainCalc);
 
 export default brainCalcGame;

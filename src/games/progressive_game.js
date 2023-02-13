@@ -1,7 +1,7 @@
-import _ from "lodash";
-import getGamePlay from "../index.js";
+import _ from 'lodash';
+import getGamePlay from '../index.js';
 
-const ruleOfGame = "What number is missing in the progression?";
+const ruleOfGame = 'What number is missing in the progression?';
 
 const brainProgressive = () => {
   let randomStartArr = _.random(1, 50);
@@ -15,15 +15,13 @@ const brainProgressive = () => {
   }
   const answer = progressive[randomHide].toString();
 
-  progressive[randomHide] = "..";
+  progressive[randomHide] = '..';
 
   const question = progressive.join(' ');
 
   return [question, answer];
 };
 
-const brainProgressiveGame = () => {
-  return getGamePlay(ruleOfGame, brainProgressive);
-};
+const brainProgressiveGame = () => getGamePlay(ruleOfGame, brainProgressive)
 
 export default brainProgressiveGame;
