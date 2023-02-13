@@ -48,7 +48,7 @@ This project contains five console games. There are three rounds in each game. Y
 
 > Enter the missing number in the progression.
 
-[![asciicast](https://asciinema.org/a/559391.svg)](https://asciinema.org/a/559391)
+[![asciicast](https://asciinema.org/a/559562.svg)](https://asciinema.org/a/559562)
 
 - Brain prime game
 
