@@ -20,7 +20,7 @@ This project contains five console games. There are three rounds in each game. Y
 ## Brain-games:
 - Brain even game
 
-# Rules:
+**Rules:**
 
 > Answer "yes" if the number is even, otherwise answer "no".
 
@@ -28,7 +28,7 @@ This project contains five console games. There are three rounds in each game. Y
 
 - Brain calculator game
 
-# Rules:
+**Rules:**
 
 > Calculate the result of the expression.
 
@@ -36,7 +36,7 @@ This project contains five console games. There are three rounds in each game. Y
 
 - Brain greatest common divisor(GCD) game
 
-# Rules:
+**Rules:**
 
 > Find the greatest common divisor of two numbers.
 
@@ -44,7 +44,7 @@ This project contains five console games. There are three rounds in each game. Y
 
 - Brain progression game
 
-# Rules:
+**Rules:**
 
 > Enter the missing number in the progression.
 
@@ -52,7 +52,7 @@ This project contains five console games. There are three rounds in each game. Y
 
 - Brain prime game
 
-# Rules:
+**Rules:**
 
 > Answer "yes" if the number is prime, otherwise answer "no".
 
