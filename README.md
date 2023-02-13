@@ -24,3 +24,7 @@ make install
 - Brain greatest common divisor(GCD) game
 
 [![asciicast](https://asciinema.org/a/559265.svg)](https://asciinema.org/a/559265)
+
+- Brain progression game
+
+[![asciicast](https://asciinema.org/a/559391.svg)](https://asciinema.org/a/559391)
