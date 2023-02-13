@@ -17,7 +17,7 @@ const brainProgressive = () => {
 
   progressive[randomHide] = "..";
 
-  const question = progressive.toString();
+  const question = progressive.join(' ');
 
   return [question, answer];
 };
