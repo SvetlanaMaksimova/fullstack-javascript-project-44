@@ -28,3 +28,7 @@ make install
 - Brain progression game
 
 [![asciicast](https://asciinema.org/a/559391.svg)](https://asciinema.org/a/559391)
+
+- Brain prime game
+
+[![asciicast](https://asciinema.org/a/559537.svg)](https://asciinema.org/a/559537)
