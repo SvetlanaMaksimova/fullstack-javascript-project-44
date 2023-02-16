@@ -28,4 +28,4 @@ const brainCalc = () => {
 
 const runBrainCalcGame = () => getGamePlay(ruleOfGame, brainCalc);
 
-export default brainCalcGame;
+export default runBrainCalcGame;
