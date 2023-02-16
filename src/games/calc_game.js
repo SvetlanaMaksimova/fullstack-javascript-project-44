@@ -26,6 +26,6 @@ const brainCalc = () => {
   return [expression, answer];
 };
 
-const brainCalcGame = () => getGamePlay(ruleOfGame, brainCalc);
+const runBrainCalcGame = () => getGamePlay(ruleOfGame, brainCalc);
 
 export default brainCalcGame;
