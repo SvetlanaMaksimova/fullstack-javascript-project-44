@@ -21,6 +21,6 @@ const brainPrime = () => {
   return [number, answer];
 };
 
-const brainPrimeGame = () => getGamePlay(ruleOfGame, brainPrime);
+const runBrainPrimeGame = () => getGamePlay(ruleOfGame, brainPrime);
 
-export default brainPrimeGame;
+export default runBrainPrimeGame;

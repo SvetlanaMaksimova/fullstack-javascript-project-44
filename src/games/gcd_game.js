@@ -26,6 +26,6 @@ const brainGcd = () => {
   return [numbers, answer];
 };
 
-const brainGcdGame = () => getGamePlay(ruleOfGame, brainGcd);
+const runBrainGcdGame = () => getGamePlay(ruleOfGame, brainGcd);
 
-export default brainGcdGame;
+export default runBrainGcdGame;

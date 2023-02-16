@@ -13,6 +13,6 @@ const brainEven = () => {
   return [randomNumber, correctAnswer];
 };
 
-const brainEvenGame = () => getGamePlay(ruleOfGame, brainEven);
+const runBrainEvenGame = () => getGamePlay(ruleOfGame, brainEven);
 
-export default brainEvenGame;
+export default runBrainEvenGame;
