@@ -6,7 +6,7 @@ const ruleOfGame = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const calculation = (num1, num2, oper) => {
-  switch (operator) {
+  switch (operators) {
     case '+': return num1 + num2;
     case '-': return num1 - num2;
     case '*': return num1 * num2;
