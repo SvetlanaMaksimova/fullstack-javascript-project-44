@@ -5,15 +5,16 @@ const ruleOfGame = 'What number is missing in the progression?';
 
 const getProgression = (start, step, length) => {
   const progressive = [];
+  let startIndex = start;
   while (progressive.length < length) {
     progressive.push(start);
-    start+= step;
+    startIndex += step;
   }
   return progressive;
 };
 
 const brainProgressive = () => {
-  let randomStartArr = _.random(1, 50);
+  const randomStartArr = _.random(1, 50);
   const randomStep = _.random(1, 10);
   const randomHide = _.random(0, 9);
   const lengthProgressive = 10;

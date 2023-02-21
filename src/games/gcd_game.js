@@ -1,12 +1,12 @@
-import _ from "lodash";
-import getGamePlay from "../index.js";
+import _ from 'lodash';
+import getGamePlay from ''../index.js';
 
-const ruleOfGame = "Find the greatest common divisor of given numbers.";
+const ruleOfGame = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = (num1, num2) => {
   if (num1 === 0) {
     return num2;
-  };
+  }
   return getGcd(num2 % num1, num1);
 };
 
