@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import getGamePlay from '../index.js';
 
-export const ruleOfGame = 'What is the result of the expression?';
+const ruleOfGame = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 

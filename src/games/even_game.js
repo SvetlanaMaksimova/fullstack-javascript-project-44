@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import getGamePlay from '../index.js';
 
-export const ruleOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+const ruleOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (randomNumber) => randomNumber % 2 === 0;
 

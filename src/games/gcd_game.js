@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import getGamePlay from '../index.js';
 
-export const ruleOfGame = 'Find the greatest common divisor of given numbers.';
+const ruleOfGame = 'Find the greatest common divisor of given numbers.';
 
 const brainGcd = () => {
   const firstRandomNumber = _.random(1, 100);
