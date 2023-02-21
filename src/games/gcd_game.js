@@ -1,27 +1,23 @@
-import _ from 'lodash';
-import getGamePlay from '../index.js';
+import _ from "lodash";
+import getGamePlay from "../index.js";
 
-const ruleOfGame = 'Find the greatest common divisor of given numbers.';
+const ruleOfGame = "Find the greatest common divisor of given numbers.";
+
+const getGcd = (num1, num2) => {
+  if (num1 === 0) {
+    return num2;
+  };
+  return getGcd(num2 % num1, num1);
+};
 
 const brainGcd = () => {
   const firstRandomNumber = _.random(1, 100);
+
   const secondRandomNumber = _.random(1, 100);
-  let firstNumber = firstRandomNumber;
-  let secondNumber = secondRandomNumber;
-  let result = 0;
-  while (firstNumber !== secondNumber) {
-    if (firstNumber < secondNumber) {
-      result = firstNumber;
-      firstNumber = secondNumber - firstNumber;
-      secondNumber = result;
-    } else {
-      result = secondNumber;
-      secondNumber = firstNumber - secondNumber;
-      firstNumber = result;
-    }
-  }
+
   const numbers = `${firstRandomNumber} ${secondRandomNumber}`;
-  const answer = result.toString();
+
+  const answer = getGcd(firstRandomNumber, secondRandomNumber).toString();
 
   return [numbers, answer];
 };
