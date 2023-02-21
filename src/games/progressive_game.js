@@ -5,10 +5,9 @@ const ruleOfGame = 'What number is missing in the progression?';
 
 const getProgression = (start, step, length) => {
   const progressive = [];
-  let startIndex = start;
   while (progressive.length < length) {
     progressive.push(start);
-    startIndex += step;
+    start += step;
   }
   return progressive;
 };
