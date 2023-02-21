@@ -3,18 +3,23 @@ import getGamePlay from '../index.js';
 
 const ruleOfGame = 'What number is missing in the progression?';
 
+const getProgression = (start, step, length) => {
+  const progressive = [];
+  while (progressive.length < length) {
+    progressive.push(start);
+    start+= step;
+  }
+  return progressive;
+};
+
 const brainProgressive = () => {
   let randomStartArr = _.random(1, 50);
   const randomStep = _.random(1, 10);
   const randomHide = _.random(0, 9);
-  const progressive = [];
+  const lengthProgressive = 10;
+  const progressive = getProgression(randomStartArr, randomStep, lengthProgressive);
 
-  while (progressive.length < 10) {
-    progressive.push(randomStartArr);
-    randomStartArr += randomStep;
-  }
   const answer = progressive[randomHide].toString();
-
   progressive[randomHide] = '..';
 
   const question = progressive.join(' ');
