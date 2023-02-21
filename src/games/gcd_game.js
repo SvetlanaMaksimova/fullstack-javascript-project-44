@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import getGamePlay from ''../index.js';
+import getGamePlay from '../index.js';
 
 const ruleOfGame = 'Find the greatest common divisor of given numbers.';
 
