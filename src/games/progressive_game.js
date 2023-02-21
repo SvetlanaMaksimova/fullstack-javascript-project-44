@@ -4,11 +4,9 @@ import getGamePlay from '../index.js';
 const ruleOfGame = 'What number is missing in the progression?';
 
 const getProgression = (start, step, length) => {
-  const progressive = [];
+  const progressive = [start];
   while (progressive.length < length) {
-    let startIndex = start;
-    progressive.push(start);
-    startIndex += step;
+    progressive.push(progressive[progressive.length - 1] += step);
   }
   return progressive;
 };
