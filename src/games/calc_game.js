@@ -15,15 +15,17 @@ const calculation = (num1, num2, oper) => {
 };
 
 const brainCalc = () => {
-  const randomOperator = _.random(0, 2);
+  const randomIndex = _.random(0, 2);
+  
+  const randomOperator = operators[randomIndex];
 
   const firstOperand = _.random(1, 10);
 
   const secondOperand = _.random(1, 10);
 
-  const expression = calculation(firstOperand, secondOperand, operators[randomOperator]);
+  const expression = calculation(firstOperand, secondOperand, randomOperator);
 
-  const question = `${firstOperand} ${operators[randomOperator]} ${secondOperand}`;
+  const question = `${firstOperand} ${randomOperator} ${secondOperand}`;
 
   const answer = expression.toString();
 
