@@ -16,7 +16,7 @@ const calculation = (num1, num2, oper) => {
 
 const brainCalc = () => {
   const randomIndex = _.random(0, 2);
-  
+
   const randomOperator = operators[randomIndex];
 
   const firstOperand = _.random(1, 10);
